@@ -1,6 +1,4 @@
 
-# Annexe
-
 ## Création d'une base de données MongoDB sur MLab
 
 Aller sur https://mlab.com/ et créer un compte gratuit en selon les étapes suivantes :
@@ -13,7 +11,7 @@ Aller sur https://mlab.com/ et créer un compte gratuit en selon les étapes sui
 
 Attention à choisir la troisième option, la gratuite !
 
-![MLab installation](https://i.ibb.co/5MHP6CT/Screenshot-2021-02-18-Choose-a-Path-Atlas-Mongo-DB-Atlas.png)
+![free plan](https://user-images.githubusercontent.com/73080397/194293161-893cd94e-dfbe-4db8-b970-123040fef57f.PNG)
 
 Choisir AWS comme Cloud Provider et une région européenne pour l'hébergement.
 
@@ -30,8 +28,8 @@ Cliquer sur "Connect" pour définir les infos de connexions :
 ![MLab installation](https://i.ibb.co/VQ1j36t/Screenshot-2021-02-18-Clusters-Atlas-Mongo-DB-Atlas-1.png)
 
 Choisir "Connect your application" :
+![connect_to_your_app](https://user-images.githubusercontent.com/73080397/194293445-670a0535-2404-4b92-aa1e-ef6de72f9967.PNG)
 
-![MLab installation](https://i.ibb.co/M2b67p4/Screenshot-2021-02-18-Clusters-Atlas-Mongo-DB-Atlas-2.png)
 
 Choisir Java, version 3.4 et copier la chaine de connexions pour l'utiliser dans le Processor "PutMongo" sur NiFi :
 
@@ -42,6 +40,9 @@ Aller dans "Collection" pour créer une Base de données en cliquant sur "Add My
 ![MLab installation](https://i.ibb.co/HtkB8WV/Screenshot-2021-02-18-Data-Atlas-Mongo-DB-Atlas.png)
 
 ![MLab installation](https://i.ibb.co/ynGjBn8/Screenshot-2021-02-18-Data-Atlas-Mongo-DB-Atlas-1.png)
+
+Security ->network access -> add my ip adress 
+![sec](https://user-images.githubusercontent.com/73080397/194295516-aa8bb18e-97a2-4e11-850d-49200eea9992.png)
 
 La base de données et la Collection sont créées. Reste plus qu'à les remplir grâce à NiFi :
 
